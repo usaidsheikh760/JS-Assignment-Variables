@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Q1;
+        let username;
+        //end
+
+        //Q2;
+        let myName = "Usaid Sheikh";
+        //end;
+
+        //Q3;
+        let message;
+        message = "Hello World";
+        alert(message);
+        //end
+
+        //Q4;
+        let name = "John Doe";
+        let age = "15 years old";
+        let work = "Certified Mobile Application Development";
+        alert(name);
+        alert(age);
+        alert(work);
+        //end;
+
+        //Q5;
+
+        let word = "Pizza";
+        let length = word.length;
+        let word2 = "";
+        for (let i = word.length; i > 0; i--) {
+            word2 += word.slice(0, i) + "\n";
+        }
+        alert(word2);
+        //end;
+
+        //Q6;
+        let email = "usaidsheikh760@gmail.com";
+        alert("My email address is " + email);
+        //end;
+
+        //Q7;
+        let book = "A smarter way to learn JavaScript";
+        alert("I am trying to learn from this book " + book);
+        //end;
+
+        //Q8;
+        let content = "Yah! I can write HTML content through JavaScript";
+        document.write(content);
+        //end;
+
+        //Q9;
+        let uniCode = "｡☆✼★━━━━━━━━━━━━★✼☆｡";
+        alert(uniCode);
+        //end;
+
+        //Assignment 3;
+        //Variable for Numbers;
+        //Q1;
+        let age2 = "23";
+        alert("I am " + age2 + " years old");
+        //end;
+
+        //Q2;
+        if (localStorage.getItem("visits") === null) {
+            localStorage.setItem("visits", 1);
+        } else {
+            var visits = parseInt(localStorage.getItem("visits"));
+            visits++;
+            localStorage.setItem("visits", visits);
+        }
+
+        var message2 = "You have visited this site " + localStorage.getItem("visits") + " times.";
+        document.write("<br>" + message2);
+        //end;
+
+        //Q3;
+        let birthYear = 1999;
+        document.write("<br>" + "My birth year is " + birthYear + "." + "<br>" + "Data type of my declare variable is " + typeof(birthYear) + ".");
+        //end;
+
+        //Q4;
+        let visitorsName = prompt("Enter Your Name");
+        let visitorsUpper = visitorsName.toUpperCase();
+        let productTitle = prompt("Enter your product title");
+        let quantity = prompt("Enter your quantity");
+        document.write ("<br>" + visitorsUpper + " ordered " + quantity + " " + productTitle + "(s) on XYZ clothig store");
+        //end;
+
+        //Assignment 04;
+        //legal and Illegal variables;
+
+        //Q1;
+        let name3 = "USAID", age3 = 23, city = "Karachi";
+        //end
+
+        //Q2;
+        //Legal names;
+        //name; name2; name$; name_; tellName;
+        //illegal names;
+        //1name; tell name; tellname; Tellname; alert;
+        //end;
+
+        //Q3;
+        document.write("<br>" + "<h4>Rules for naming JS variables</h4>" + "<br>" + "Variables names can only contain letters, numbers, $ and _." + "<br>" + "Variable must begin with letter, $ or _" + "<br>" + "Variables names are case sensitive" + "<br>" + "Variables names should not be JS keyword");
+        //end;
+
+        
+
+    </script>
+</body>
+
+</html>
